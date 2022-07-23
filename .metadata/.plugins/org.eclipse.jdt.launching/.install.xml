@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <dirs>
     <entry loc="D:\Arquivos do Antigo Computador\sts-4.14.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208" stamp="1657559281080"/>
+    <entry loc="D:\Arquivos do Antigo Computador\jdk-11.0.2\bin" stamp="1657559235164"/>
+    <entry loc="D:\Program Files\Java\zulu17.34.19-ca-jdk17.0.3-win_x64" stamp="1657519039141"/>
+    <entry loc="D:\Program Files\Java\jdk-11.0.15.1" stamp="1658543321612"/>
     <entry loc="D:\Arquivos do Antigo Computador\sts-4.14.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre" stamp="1657559276358"/>
+    <entry loc="D:\Program Files\Java\jdk-11.0.15.1\bin" stamp="1658543319660"/>
+    <entry loc="D:\Program Files\Java\zulu17.34.19-ca-jdk17.0.3-win_x64\bin" stamp="1657519034981"/>
 </dirs>

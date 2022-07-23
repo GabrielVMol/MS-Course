@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
     <libraryInfo home="D:\Arquivos do Antigo Computador\sts-4.14.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208" version="17.0.2"/>
+    <libraryInfo home="D:\Arquivos do Antigo Computador\jdk-11.0.2\bin" version="11.0.2"/>
+    <libraryInfo home="D:\Program Files\Java\zulu17.34.19-ca-jdk17.0.3-win_x64" version="17.0.3"/>
+    <libraryInfo home="D:\Program Files\Java\jdk-11.0.15.1" version="11.0.15.1"/>
     <libraryInfo home="D:\Arquivos do Antigo Computador\sts-4.14.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.2.v20220201-1208\jre" version="17.0.2"/>
+    <libraryInfo home="D:\Program Files\Java\jdk-11.0.15.1\bin" version="11.0.15.1"/>
+    <libraryInfo home="D:\Program Files\Java\zulu17.34.19-ca-jdk17.0.3-win_x64\bin" version="17.0.3"/>
 </libraryInfos>

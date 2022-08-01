@@ -162,7 +162,6 @@ INDEX VERSION 1.131+D:\Documentos\ws-sts\MS-Course\.metadata\.plugins\org.eclips
 1400831791.index
 2238037803.index
 2857146192.index
-1935427057.index
 1611140050.index
 3815515644.index
 553434200.index

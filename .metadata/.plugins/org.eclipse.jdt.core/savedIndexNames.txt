@@ -95,7 +95,6 @@ INDEX VERSION 1.131+D:\Documentos\ws-sts\MS-Course\.metadata\.plugins\org.eclips
 597526761.index
 286656181.index
 3195485348.index
-3750723360.index
 1518553414.index
 1117411886.index
 2737010775.index
@@ -137,9 +136,7 @@ INDEX VERSION 1.131+D:\Documentos\ws-sts\MS-Course\.metadata\.plugins\org.eclips
 393908202.index
 786073972.index
 3657772283.index
-2524761900.index
 1044141585.index
-2803607429.index
 1348712606.index
 1967375167.index
 1626891848.index
@@ -169,7 +166,6 @@ INDEX VERSION 1.131+D:\Documentos\ws-sts\MS-Course\.metadata\.plugins\org.eclips
 2525153070.index
 3159970828.index
 736457107.index
-430220362.index
 2287452951.index
 634246922.index
 599339630.index
@@ -215,4 +211,3 @@ INDEX VERSION 1.131+D:\Documentos\ws-sts\MS-Course\.metadata\.plugins\org.eclips
 1559720797.index
 284323755.index
 1327292971.index
-2024137751.index

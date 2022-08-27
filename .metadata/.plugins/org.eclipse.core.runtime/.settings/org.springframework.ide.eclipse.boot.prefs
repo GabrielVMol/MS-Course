@@ -7,6 +7,7 @@ org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-feign=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.cloud-resilience4j=2
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.data-jpa=3
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.h2=3
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.postgresql=3
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=6
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=hr-config-server
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=2.7.2

@@ -1,7 +1,6 @@
 package com.gabri.developer.hruser.entities;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -11,16 +10,15 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_role")
-public class Role implements Serializable{
+public class Role implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String roleName;
 	
 	public Role() {
-		
 	}
 
 	public Role(Long id, String roleName) {
@@ -47,7 +45,10 @@ public class Role implements Serializable{
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(roleName);
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((roleName == null) ? 0 : roleName.hashCode());
+		return result;
 	}
 
 	@Override
@@ -59,6 +60,11 @@ public class Role implements Serializable{
 		if (getClass() != obj.getClass())
 			return false;
 		Role other = (Role) obj;
-		return Objects.equals(roleName, other.roleName);
+		if (roleName == null) {
+			if (other.roleName != null)
+				return false;
+		} else if (!roleName.equals(other.roleName))
+			return false;
+		return true;
 	}
 }

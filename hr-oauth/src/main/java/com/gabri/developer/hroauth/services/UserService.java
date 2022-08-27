@@ -12,7 +12,7 @@ import com.gabri.developer.hroauth.entities.User;
 import com.gabri.developer.hroauth.feignclients.UserFeignClient;
 
 @Service
-public class UserService implements UserDetailsService{
+public class UserService implements UserDetailsService {
 
 	private static Logger logger = LoggerFactory.getLogger(UserService.class);
 	
@@ -21,8 +21,8 @@ public class UserService implements UserDetailsService{
 	
 	public User findByEmail(String email) {
 		User user = userFeignClient.findByEmail(email).getBody();
-		if(user == null) {
-			logger.error("Email not found:" + email);
+		if (user == null) {
+			logger.error("Email not found: " + email);
 			throw new IllegalArgumentException("Email not found");
 		}
 		logger.info("Email found: " + email);

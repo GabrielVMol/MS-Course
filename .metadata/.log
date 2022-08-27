@@ -8253,3 +8253,99 @@ java.net.URISyntaxException: Illegal character in path at index 17: file:/D:/Arq
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:40:26.269
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IHaCuKNq => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:20.664
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:20.667
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@7fcc8d9f[org.springframework.tooling.boot.ls:1.32.0.202203131529(id=569)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:20.670
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:21.996
+!MESSAGE Boot LS startup time from start to initialized: 1322ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.043
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WRIRseoTisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.046
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.049
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.052
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.055
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.059
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.WRIRseoT => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.063
+!MESSAGE classpath=182 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.071
+!MESSAGE buffering callback sts4.classpath.WRIRseoT hr-api-gateway-zuul false 182
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.071
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.075
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.078
+!MESSAGE buffering callback sts4.classpath.WRIRseoT hr-config-server false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.078
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.083
+!MESSAGE classpath=165 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.088
+!MESSAGE buffering callback sts4.classpath.WRIRseoT hr-eureka-server false 165
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.089
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.094
+!MESSAGE classpath=180 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.100
+!MESSAGE buffering callback sts4.classpath.WRIRseoT hr-oauth false 180
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.100
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.105
+!MESSAGE classpath=165 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.110
+!MESSAGE buffering callback sts4.classpath.WRIRseoT hr-payroll false 165
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.110
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.116
+!MESSAGE classpath=169 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.121
+!MESSAGE buffering callback sts4.classpath.WRIRseoT hr-user false 169
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.121
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.127
+!MESSAGE classpath=176 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.132
+!MESSAGE buffering callback sts4.classpath.WRIRseoT hr-worker false 176
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.132
+!MESSAGE executing callback sts4.classpath.WRIRseoT 7 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:46:22.486
+!MESSAGE executing callback sts4.classpath.WRIRseoT SUCCESS [done]

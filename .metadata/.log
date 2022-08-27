@@ -8211,3 +8211,45 @@ java.net.URISyntaxException: Illegal character in path at index 17: file:/D:/Arq
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-26 23:53:33.421
 !MESSAGE executing callback sts4.classpath.IHaCuKNq SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:25:15.469
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:25:15.482
+!MESSAGE classpath=182 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:25:15.491
+!MESSAGE buffering callback sts4.classpath.IHaCuKNq hr-api-gateway-zuul false 182
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:25:15.496
+!MESSAGE executing callback sts4.classpath.IHaCuKNq 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:25:15.530
+!MESSAGE executing callback sts4.classpath.IHaCuKNq SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:34:55.419
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:34:55.434
+!MESSAGE classpath=180 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:34:55.456
+!MESSAGE buffering callback sts4.classpath.IHaCuKNq hr-oauth false 180
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:34:55.460
+!MESSAGE executing callback sts4.classpath.IHaCuKNq 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:34:55.492
+!MESSAGE executing callback sts4.classpath.IHaCuKNq SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:40:26.261
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IHaCuKNq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:40:26.264
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.IHaCuKNq
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:40:26.267
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-08-27 00:40:26.269
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.IHaCuKNq => OK

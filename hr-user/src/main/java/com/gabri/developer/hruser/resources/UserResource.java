@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.gabri.developer.hruser.entities.User;
 import com.gabri.developer.hruser.repositories.UserRepository;
 
-@RestController
-@RequestMapping(value = "/users")
+@RestController                    // Permite lidar com todas as APIs REST, com solicitações GET, POST, PUT, DELETE
+@RequestMapping(value = "/users")  // É usado para  mapear solicitações HTTP para métodos manipuladores de controladores MVC e REST
 public class UserResource {
 	
-	@Autowired
+	@Autowired  // Indica onde a injeção automática deve ser aplicada
 	private UserRepository repository;
 	
-	@GetMapping(value = "/{id}")
+	@GetMapping(value = "/{id}")  // É uma anotação composta que funciona como um atalho para arquivos @RequestMapping
 	public ResponseEntity<User> findById(@PathVariable Long id) {
 		User obj = repository.findById(id).get();
 		return ResponseEntity.ok(obj);

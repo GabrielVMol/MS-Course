@@ -7,10 +7,10 @@ import com.gabri.developer.hrpayroll.entities.Payment;
 import com.gabri.developer.hrpayroll.entities.Worker;
 import com.gabri.developer.hrpayroll.feignclients.WorkerFeignClient;
 
-@Service
+@Service // Usado para marcar a classe como um provedor de serviços 
 public class PaymentService {
 
-	@Autowired
+	@Autowired  //Indica onde a injeção automática deve ser aplicada
 	private WorkerFeignClient workerFeignClient;
 
 	public Payment getPayment(long workerId, int days) {

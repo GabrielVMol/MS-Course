@@ -18,11 +18,11 @@ import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import org.springframework.web.filter.CorsFilter;
 
-@Configuration
-@EnableResourceServer
+@Configuration         // Indica que a classe possui métodos de definição @Bean
+@EnableResourceServer  // Habilita o OAuth2 para a aplicação spring boot que será um Servidor de Recursos 
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 
-	@Autowired
+	@Autowired // Indica um ponto aonde a injeção automática deve ser aplicada 
 	private JwtTokenStore tokenStore;
 	
 	private static final String[] PUBLIC = { "/hr-oauth/oauth/token" };
@@ -31,12 +31,12 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 	
 	private static final String[] ADMIN = { "/hr-payroll/**", "/hr-user/**", "/actuator/**", "/hr-worker/actuator/**", "/hr-oauth/actuator/**" };
 	
-	@Override
+	@Override // Reescrever um método que foi herdado
 	public void configure(ResourceServerSecurityConfigurer resources) throws Exception {
 		resources.tokenStore(tokenStore);
 	}
 
-	@Override
+	@Override 
 	public void configure(HttpSecurity http) throws Exception {
 		http.authorizeRequests()
 		.antMatchers(PUBLIC).permitAll()
@@ -47,7 +47,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter{
 		http.cors().configurationSource(corsConfigurationSource());
 	}	
 	
-	@Bean
+	@Bean // Indica que o método anotado produz um bean a ser gerenciado pelo contêiner spring
 	public CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration corsConfig = new CorsConfiguration();
 		corsConfig.setAllowedOrigins(Arrays.asList("*"));

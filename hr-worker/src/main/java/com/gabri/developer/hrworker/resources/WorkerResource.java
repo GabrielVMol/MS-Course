@@ -18,26 +18,26 @@ import com.gabri.developer.hrworker.repositories.WorkerRepository;
 
 
 
-@RefreshScope
-@RestController
-@RequestMapping(value = "/workers")
+@RefreshScope                        // É usada para carregar o valor das propriedades do Servidor de Configurações
+@RestController                      // Permite lidar com todas as APIs REST, com solicitações GET, POST, PUT, DELETE
+@RequestMapping(value = "/workers")  // É usado para  mapear solicitações HTTP para métodos manipuladores de controladores MVC e REST
 public class WorkerResource {
 	
 	private static Logger logger = LoggerFactory.getLogger(WorkerResource.class);
 	
-	@Autowired
+	@Autowired  // Indica onde a injeção automática deve ser aplicada
 	private Environment env;
 	
 	@Autowired
 	private WorkerRepository repository;
 	
-	@GetMapping(value = "/configs")
+	@GetMapping(value = "/configs")  // É uma anotação composta que funciona como um atalho para arquivos @RequestMapping
 	public ResponseEntity<Void> getConfigs() {
 		//logger.info("CONFIG = " + testConfig);
 		return ResponseEntity.noContent().build();
 	}		
 	
-	@GetMapping
+	@GetMapping  
 	public ResponseEntity<List<Worker>> findAll() {
 		List<Worker> list = repository.findAll();
 		return ResponseEntity.ok(list);

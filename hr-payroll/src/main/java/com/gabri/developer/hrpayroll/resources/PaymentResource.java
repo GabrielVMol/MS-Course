@@ -11,14 +11,14 @@ import com.gabri.developer.hrpayroll.entities.Payment;
 import com.gabri.developer.hrpayroll.services.PaymentService;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
-@RestController
-@RequestMapping(value = "/payments")
+@RestController                       // Permite lidar com todas as APIs REST, com solicitações GET, POST, PUT, DELETE
+@RequestMapping(value = "/payments")  // É usado para  mapear solicitações HTTP para métodos manipuladores de controladores MVC e REST
 public class PaymentResource {
-	@Autowired
+	@Autowired  // Indica onde a injeção automática deve ser aplicada
 	private PaymentService service;
 
-	@HystrixCommand(fallbackMethod = "getPaymentAlternative")
-	@GetMapping(value = "/{workerId}/days/{days}")
+	@HystrixCommand(fallbackMethod = "getPaymentAlternative")   // Usado para passar algum comando para a biblioteca do Hystrix
+	@GetMapping(value = "/{workerId}/days/{days}")              // É uma anotação composta que funciona como um atalho para arquivos @RequestMapping
 	public ResponseEntity<Payment> getPayment(@PathVariable Long workerId, @PathVariable Integer days) {
 		Payment payment = service.getPayment(workerId, days);
 		return ResponseEntity.ok(payment);

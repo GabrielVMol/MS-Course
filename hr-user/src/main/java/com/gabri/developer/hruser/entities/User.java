@@ -15,13 +15,13 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
-@Entity
-@Table(name = "tb_user")
+@Entity                   // Usado para informar que a classe tambem é uma entidade
+@Table(name = "tb_user")  // Usado para criar a tabela para gerenciar as chaves primarias
 public class User implements Serializable {
 	private static final long serialVersionUID = 1L;
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id                                                  // Ultilizada para informar ao JPA qual atributo de uma entidade estará relacionado a chave primaria
+	@GeneratedValue(strategy = GenerationType.IDENTITY)  // Ultilizada para informar qua a geração do valor do identificador único da entidade será gerenciado pelo hibernate
 	private Long id;
 	private String name;
 	
@@ -83,7 +83,7 @@ public class User implements Serializable {
 		return roles;
 	}
 
-	@Override
+	@Override  // Reescrever um método que foi herdado
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;

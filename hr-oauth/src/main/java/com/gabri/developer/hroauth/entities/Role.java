@@ -33,7 +33,7 @@ public class Role implements Serializable {
 		this.roleName = roleName;
 	}
 
-	@Override
+	@Override // Reescrever um método que foi herdado
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;

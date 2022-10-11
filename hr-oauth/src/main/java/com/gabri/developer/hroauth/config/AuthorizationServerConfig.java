@@ -13,18 +13,18 @@ import org.springframework.security.oauth2.config.annotation.web.configurers.Aut
 import org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter;
 import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 
-@Configuration
-@EnableAuthorizationServer
+@Configuration // Indica que a classe possui métodos de definição Bean
+@EnableAuthorizationServer // Habilita o OAuth2 que é usado para as autenticações 
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter{
 
-	@Value("${oauth.client.name}")
+	@Value("${oauth.client.name}") // É usada para atribuir valores padrão a variáveis e argumentos de métodos
 	private String clientName;
 	
 	@Value("${oauth.client.secret}")
 	private String clientSecret;
 	
 	
-	@Autowired
+	@Autowired // Indica um ponto aonde a injeção automática deve ser aplicada 
 	private BCryptPasswordEncoder passwordEncoder;
 	
 	@Autowired
@@ -36,7 +36,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 	@Autowired
 	private AuthenticationManager authenticationManager; 
 	
-	@Override
+	@Override // Reescrever um método que foi herdado
 	public void configure(AuthorizationServerSecurityConfigurer security) throws Exception {
 		security.tokenKeyAccess("permitAll()").checkTokenAccess("isAuthenticated()");
 	}

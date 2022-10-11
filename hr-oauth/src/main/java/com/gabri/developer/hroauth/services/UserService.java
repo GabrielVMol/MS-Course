@@ -11,12 +11,12 @@ import org.springframework.stereotype.Service;
 import com.gabri.developer.hroauth.entities.User;
 import com.gabri.developer.hroauth.feignclients.UserFeignClient;
 
-@Service
+@Service // Usado para marcar a classe como um provedor de serviços 
 public class UserService implements UserDetailsService {
 
 	private static Logger logger = LoggerFactory.getLogger(UserService.class);
 	
-	@Autowired
+	@Autowired //Indica onde a injeção automática deve ser aplicada
 	private UserFeignClient userFeignClient;
 	
 	public User findByEmail(String email) {
@@ -29,7 +29,7 @@ public class UserService implements UserDetailsService {
 		return user;
 	}
 
-	@Override
+	@Override // Reescrever um método que foi herdado
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		User user = userFeignClient.findByEmail(username).getBody();
 		if (user == null) {

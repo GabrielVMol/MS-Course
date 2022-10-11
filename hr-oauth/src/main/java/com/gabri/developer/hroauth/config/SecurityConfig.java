@@ -9,10 +9,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-@Configuration
+@Configuration // Indica que a classe possui métodos de definição Bean
 public class SecurityConfig extends WebSecurityConfigurerAdapter{
 
-	@Autowired
+	@Autowired // Indica um ponto aonde a injeção automática deve ser aplicada 
 	private BCryptPasswordEncoder passwordEncoder;
 	
 	@Autowired
@@ -24,8 +24,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter{
 		auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder);
 	}
 
-	@Override
-	@Bean
+	@Override // Reescrever um método que foi herdado
+	@Bean     // Indica que o método anotado produz um bean a ser gerenciado pelo contêiner spring
 	protected AuthenticationManager authenticationManager() throws Exception {
 		return super.authenticationManager();
 	}

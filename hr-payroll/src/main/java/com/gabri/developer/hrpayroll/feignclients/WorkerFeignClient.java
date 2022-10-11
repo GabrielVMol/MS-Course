@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.gabri.developer.hrpayroll.entities.Worker;
 
-@Component
-@FeignClient(name = "hr-worker", path = "/workers")
+@Component                                           // É usado para denotar a classe como um componente
+@FeignClient(name = "hr-worker", path = "/workers")  // É usado para criar um cliente Spring Cloud LoadBalancer
 public interface WorkerFeignClient {
 
-	@GetMapping(value = "/{id}")
+	@GetMapping(value = "/{id}") // É uma anotação composta que funciona como um atalho para arquivos @RequestMapping
 	ResponseEntity<Worker> findById(@PathVariable Long id);
 }
